@@ -66,7 +66,7 @@ class _VideoDetailsState extends State<VideoDetails> {
               SizedBox(height: 5,),
               Container(
                 margin: EdgeInsets.only(left: 10.0, right: 10.0),
-                child: Text(widget.video.snippet.description, textAlign: TextAlign.start, maxLines: 10, style: TextStyle(fontSize: 13),)
+                child: Text(widget.video.snippet.description, textAlign: TextAlign.start, maxLines: 11, style: TextStyle(fontSize: 15),)
               )
             ],
           ),
