@@ -8,7 +8,7 @@ class MainPage extends StatefulWidget {
   _NewsPageState createState() => _NewsPageState();
 }
 
-class _NewsPageState extends State<MainPage> {
+class _NewsPageState extends State<MainPage> with AutomaticKeepAliveClientMixin {
 
   @override
   Widget build(BuildContext context) {
@@ -21,4 +21,8 @@ class _NewsPageState extends State<MainPage> {
           : VideoList(responseYoutube),
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }
